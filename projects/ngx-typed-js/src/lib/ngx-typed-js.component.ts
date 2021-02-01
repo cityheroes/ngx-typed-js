@@ -7,38 +7,38 @@ import Typed, {TypedOptions} from 'typed.js';
   styleUrls: ['ngx-typed-js.component.css']
 })
 export class NgxTypedJsComponent implements AfterViewInit {
-  @Input() private cursorColor?: string;
+  @Input() public cursorColor?: string;
 
-  @Input() private strings?: string[];
-  @Input() private stringsElement?: string;
-  @Input() private typeSpeed?: number;
-  @Input() private startDelay?: number;
-  @Input() private backSpeed?: number;
-  @Input() private smartBackspace?: boolean;
-  @Input() private shuffle?: boolean;
-  @Input() private backDelay?: number;
-  @Input() private fadeOut?: boolean;
-  @Input() private fadeOutClass?: string;
-  @Input() private fadeOutDelay?: boolean;
-  @Input() private loop?: boolean;
-  @Input() private loopCount?: number;
-  @Input() private showCursor?: boolean;
-  @Input() private cursorChar?: string;
-  @Input() private autoInsertCss?: boolean;
-  @Input() private attr?: string;
-  @Input() private bindInputFocusEvents?: boolean;
-  @Input() private contentType?: string;
+  @Input() public strings?: string[];
+  @Input() public stringsElement?: string;
+  @Input() public typeSpeed?: number;
+  @Input() public startDelay?: number;
+  @Input() public backSpeed?: number;
+  @Input() public smartBackspace?: boolean;
+  @Input() public shuffle?: boolean;
+  @Input() public backDelay?: number;
+  @Input() public fadeOut?: boolean;
+  @Input() public fadeOutClass?: string;
+  @Input() public fadeOutDelay?: boolean;
+  @Input() public loop?: boolean;
+  @Input() public loopCount?: number;
+  @Input() public showCursor?: boolean;
+  @Input() public cursorChar?: string;
+  @Input() public autoInsertCss?: boolean;
+  @Input() public attr?: string;
+  @Input() public bindInputFocusEvents?: boolean;
+  @Input() public contentType?: string;
 
-  @Output() private completed: EventEmitter<void> = new EventEmitter<void>();
-  @Output() private preStringTyped: EventEmitter<number> = new EventEmitter<number>();
-  @Output() private stringTyped: EventEmitter<number> = new EventEmitter<number>();
-  @Output() private lastStringBackspaced: EventEmitter<void> = new EventEmitter<void>();
-  @Output() private typingPaused: EventEmitter<number> = new EventEmitter<number>();
-  @Output() private typingResumed: EventEmitter<number> = new EventEmitter<number>();
-  @Output() private reset: EventEmitter<void> = new EventEmitter<void>();
-  @Output() private stopped: EventEmitter<number> = new EventEmitter<number>();
-  @Output() private started: EventEmitter<number> = new EventEmitter<number>();
-  @Output() private destroyed: EventEmitter<void> = new EventEmitter<void>();
+  @Output() public completed: EventEmitter<void> = new EventEmitter<void>();
+  @Output() public preStringTyped: EventEmitter<number> = new EventEmitter<number>();
+  @Output() public stringTyped: EventEmitter<number> = new EventEmitter<number>();
+  @Output() public lastStringBackspaced: EventEmitter<void> = new EventEmitter<void>();
+  @Output() public typingPaused: EventEmitter<number> = new EventEmitter<number>();
+  @Output() public typingResumed: EventEmitter<number> = new EventEmitter<number>();
+  @Output() public reset: EventEmitter<void> = new EventEmitter<void>();
+  @Output() public stopped: EventEmitter<number> = new EventEmitter<number>();
+  @Output() public started: EventEmitter<number> = new EventEmitter<number>();
+  @Output() public destroyed: EventEmitter<void> = new EventEmitter<void>();
 
   private typed: Typed;
   @ViewChild('wrapper', { static: true }) private content;
