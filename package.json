@@ -1,6 +1,6 @@
 {
   "name": "ngx-typed-js-aot",
-  "version": "1.0.0",
+  "version": "2.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build:library": "ng build ngx-typed-js --prod; cp README.md dist/ngx-typed-js/README.md"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~9.0.6",
     "@angular/common": "~9.0.6",
