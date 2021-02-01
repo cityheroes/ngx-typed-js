@@ -1,5 +1,5 @@
 {
-  "name": "ngx-typed-js-demo",
+  "name": "ngx-typed-js-aot",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
